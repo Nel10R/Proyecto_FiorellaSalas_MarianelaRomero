@@ -1,0 +1,90 @@
+img{
+  width: 50px;
+}
+
+
+
+table {
+ 
+  border: 1px solid rgb(248, 248, 248);
+  width: 50%;
+  margin: 50px 50px 50px 150px;
+  color: white;
+}
+
+table tr {
+  background-color:  #5a2e70;
+  border: 1px solid rgb(255, 255, 255);
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  
+}
+
+@media screen and (max-width: 600px) {
+  table {
+   border: 0;
+   margin: 0px 0px 0px 10px;
+  }
+
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    position: absolute;
+  }
+  
+  table tr {
+    border-bottom: 10px solid #F7ECE1;
+    display: block;
+    margin-bottom: .600em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #EDC9FF;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+ 
+}
+html { 
+  height: 100%;
+}
+
+.contenidoPrincipal{
+  padding: 90px 100px 100px 100px;
+}
+@media screen and (max-width: 1020px){
+  
+  .contenidoPrincipal{
+      width: 100%;
+      flex-direction: column;
+  }
+
+ 
+}
+
+
+
+
+
+

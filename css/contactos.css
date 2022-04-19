@@ -1,0 +1,359 @@
+
+.container-registrate {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #5a2e70;
+    border-radius: 25px;
+    box-shadow: 0px 10px 15px #320d44;
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-form {
+    background-color: #ffdcea;
+    position: relative;
+  }
+  
+  
+  form {
+    padding: 5rem 5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .title {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+  }
+  
+  .input-container-registrate {
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #5a2e70;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: black;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  
+  
+  
+  .input-container-registrate label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+  }
+  
+  .input-container-registrate.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+  }
+  
+  .btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #5a2e70;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  
+  /* ////////////////////////////////////////////////////////////////////////////////////////////*/
+  /* INPUTS */
+  
+  .input-container-registrate span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+  }
+  
+  .input-container-registrate-Nacimiento label{
+   color: black; 
+  }
+  
+  
+  .Contenedor-radios{
+    width: 500px;
+    height: 200px;
+  }
+  
+
+  .genero p{
+  color: black;
+  
+  }
+  .genero{
+  float: left;
+  
+  }
+  
+  .gradoAC{
+    color: black;
+    
+    }
+    
+    .gradoAC{
+    float: right;
+    padding-right: 200px ;
+    }
+  
+  .input-container-registrate span:before,
+  .input-container-registrate span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-container-registrate span:before {
+    left: 50%;
+  }
+  
+  .input-container-registrate span:after {
+    right: 50%;
+  }
+  
+  .input-container-registrate.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+  }
+  
+  .input-container-registrate.focus span:before,
+  .input-container-registrate.focus span:after {
+    width: 50%;
+    opacity: 1;
+  }
+  
+  /* ////////////////////////////////////////////////////////////////////////////////////////////*/
+  
+  .contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+  }
+  
+  .contact-info .title {
+    color: #fff;
+  }
+  
+  
+  
+  .text {
+    color: rgb(255, 255, 255);
+    margin: 1.5rem 0 2rem 0;
+  }
+  
+  .information {
+    display: flex;
+    color: rgb(255, 255, 255);
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+  
+  
+  
+  
+  @media (max-width: 850px) {
+    .form {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-info:before {
+      bottom: initial;
+      top: -75px;
+      right: 65px;
+      transform: scale(0.95);
+    }
+  
+  
+    .text {
+      margin: 1rem 0 1.5rem 0;
+      width: 100%;
+    }
+  
+    .input{
+      width: 100%;
+    }
+  
+     #ContenedorNacimiento{
+       height: 70px;
+     }
+     .k1{
+       padding-bottom: 23px;
+     }
+    #fechaNacimiento{
+      width: 100%;
+     
+    }
+  
+    .labelFN{
+      position: absolute;
+      padding-bottom: 1150px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+  
+    .text {
+      margin: 1rem 0 1.5rem 0;
+      width: 90%;
+    }
+  
+    .input{
+      width: 90%;
+    }
+  
+     #ContenedorNacimiento{
+       height: 90px;
+     }
+     .k1{
+       padding-bottom: 23px;
+     }
+    #fechaNacimiento{
+      width: 90%;
+     
+    }
+  }
+  
+  
+  
+  @media (max-width: 620px) {
+  
+    .text {
+      margin: 1rem 0 1.5rem 0;
+      width: 60%;
+    }
+  
+    .input{
+      width: 60%;
+    }
+  
+     #ContenedorNacimiento{
+       height: 60px;
+     }
+     .k1{
+       padding-bottom: 23px;
+     }
+    #fechaNacimiento{
+      width: 60%;
+     
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+  
+    .container {
+      padding: 1.5rem;
+    }
+  
+    .container-registrate {
+      padding: 1.5rem;
+    }
+  
+    .contact-info:before {
+      display: none;
+    }
+  
+    form,
+    .contact-info {
+      padding: 1.7rem 1.6rem;
+    }
+  
+    .text,
+    .information,
+    .social-media p {
+      font-size: 0.8rem;
+      width: 50%;
+    }
+  
+    .title {
+      font-size: 1.15rem;
+    }
+  
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+  
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
+  
+    .text {
+      margin: 1rem 0 1.5rem 0;
+      width: 60%;
+    }
+  
+    .input{
+      width: 50%;
+    }
+  
+     #ContenedorNacimiento{
+       height: 50px;
+     }
+     .k1{
+       padding-bottom: 23px;
+     }
+    #fechaNacimiento{
+      width: 50%;
+     
+    }
+  
+  }
+  

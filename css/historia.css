@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+html { 
+    height: 100%;
+  }
+  
+ .contenidoPrincipal{
+    padding: 30px 100px 100px 100px;
+  }
+ video{
+   width: 750px;
+ }
+
+ audio{
+   width: 750px;
+ }
+
+ audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: #8d86c9;
+  color: white;
+}
+ h1{
+   -webkit-text-stroke: 1px black;
+   color: rgb(202, 198, 198); 
+ }
+
+ h3{
+   text-align: center;
+   color: rgb(161, 161, 161);
+ }
+
+ @media screen and (max-width: 1020px){
+  
+    .contenidoPrincipal{
+        width: 100%;
+        flex-direction: column;
+    }
+    .contenidoVideo, .contenidoAudio{
+      display: flex;
+      justify-content: center;
+  }
+
+  .contenidoVideo video{
+      max-width: 300px;
+      margin: 0px;
+  }
+  .contenidoAudio audio{
+    max-width: 300px;
+    margin: 0px;
+}
+  
+  }

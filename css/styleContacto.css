@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+html { 
+    height: 100%;
+  }
+  
+  * { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab";
+  }
+  .logo{
+   
+    margin-left: 105%;
+    margin-top: -14.5%;
+  
+  }
+  
+  #outer{
+   /* margin: 10px 200px 30px 200px;*/
+    width: 75%;
+    background: white;
+    position: relative;
+    overflow: overlay; /*Investigar*/
+    margin: 0 auto;/*centrar la pantalla*/
+    margin-top: 10px;
+    border: initial;
+  }
+    /*Para quitar el scrollbar de lado*/
+     body ::-webkit-scrollbar {
+        display: none;
+    }
+  body{
+    background: url(../img/fondo\ crema.jpg);
+    background-attachment: fixed;
+    background-size: cover ;/*hace el tamaño del fondo grande que cubra toda la pantalla*/
+    background-repeat: no-repeat ; /*#F7ECE1;/*rgb(240, 230, 216);*/
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar{
+    background: #EDC9FF
+    !important;
+    
+}
+
+.navbar .nav-item .nav-link{
+   font-size: 19px;
+   font-weight: 500;
+   color:  black;
+   margin: 0 15px;
+   margin-top: 15px;
+   margin-bottom: 5px;
+   padding: 0 0 0 30px;
+   transition: all .4s;
+   
+}
+
+#navbarNav{
+    position: relative;
+     
+}
+.navbar .nav-item .nav-link  a:hover{
+  color: deeppink;
+}
+
+
+  footer { 
+    width: 1024px;
+    height: 100px;
+    padding: 25px 20px 30px 20px;
+    text-align: center; 
+    background: #EDC9FF;
+    text-decoration: none;
+  }
+  footer a{
+    color: #555;
+  }
+  
+  footer a:hover{
+    color: #272438;
+  }
+  footer p { 
+    line-height: 1.7em;
+    padding: 0 0 4px 0;
+    color:  #272438;
+    text-align: center; 
+  }
+
+  p{
+      text-align: justify;
+  }
+  @media screen and (max-width:700px){
+    #outer, .header .principal .logo{
+       width: 100%;
+       border-right: 0px;
+    }
+}
+@media only screen and (max-width: 720px) { /* For mobile phones: */
+
+    .contenidoFooter footer{
+        width: 100%;
+        margin: 0;
+        display: block;
+        max-width: 1000px;
+        padding: 0 20px;
+       
+    }
+
+    .logo{
+      max-width: 200px;
+      margin-left: 35%;
+    }
+}
